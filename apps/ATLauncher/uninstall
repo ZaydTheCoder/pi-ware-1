@@ -18,6 +18,6 @@ sudo rm -rf ~/lwjgl2arm64
 sudo rm -rf /usr/share/Atlauncher/
 rm -rf ~/.local/share/ATlauncher
 
-echo """Successfully uninstalled ATLauncher.
-Closing in 5 seconds."""
+echo "Successfully uninstalled ATLauncher."
+echo "Closing in 5 seconds."
 sleep 5s
