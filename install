@@ -25,7 +25,7 @@ function warning {
 #Make required directory for updater
 mkdir -p "$PW_PREFIX/share/pi-ware"
 mkdir -p "$PW_PREFIX/bin"
-echo $(git rev-parse main) > "$PW_PREFIX/share/pi-ware/version"
+echo $(git rev-parse dev-branch) > "$PW_PREFIX/share/pi-ware/version"
 
 if [ "$1" == "update" ];then
   rm -rf $HOME/pi-ware
