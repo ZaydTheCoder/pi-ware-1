@@ -5,6 +5,6 @@ if [ -d "$HOME/.local" ]; then
  mkdir -p "$HOME/.local/bin"
 fi
 wget https://raw.githubusercontent.com/ZaydTheCoder/pi-ware-1/main/func/pi-ware-term
-cp pi-ware-term $HOME/.local/bin/pi-ware
+cp -r "pi-ware-term" "$HOME/.local/bin/pi-ware"
 echo "Added pi-ware-commands to Terminal!"
 echo "Please restart terminal to apply changes."
