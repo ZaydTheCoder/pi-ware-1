@@ -1,0 +1,20 @@
+#!/bin/bash
+
+mkdir .commands
+cd .commands
+wget https://github.com/ZaydTheCoder/pi-ware1/pi-ware-commands
+echo "create file" > ~/.commands/.bashrc
+rm ~/.commands/.bashrc
+cp ~/.bashrc ~/.commands
+
+echo "source ~/.commands/pi-ware-commands" >> ~/.bashrc
+
+echo "Please restart terminal to apply changes.
+Commands will not function if not restarted.
+To restart, close this terminal window and open a new window.
+Commands created are: 'pi-ware-install', 'pi-ware-uninstall', 'pi-ware-update', 'pi-ware-apps'.
+'pi-ware-install' installs the program,
+'pi-ware-uninstall' uninstalls the program and
+'pi-ware-update' updates pi-ware. (Usually not required unless a force update has to be done. Automatic updates will update pi-ware. This command can also be used to make you feel happy that pi-ware is up-to-date (^人^).)
+'pi-ware-apps' shows the current app available on pi-ware.
+Thanks for using pi-ware."
