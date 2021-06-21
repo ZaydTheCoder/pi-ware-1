@@ -121,7 +121,7 @@ elif [[ "$1" == "--uninstall-all" ]]; then
   echo "Successfully uninstalled pi-ware from your system!"
 else
   error "ERROR: $AppName requires a valid command! | for help run 'pi-ware --help'"
-  add-repo --help
+  pi-ware --help
   exit 1
 fi
 
