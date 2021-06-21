@@ -45,6 +45,11 @@ else
   CopyYear="$OG_Year - $Year"
 fi
 
+#Check if pi-ware is installed
+if [ ! -d "$HOME/pi-ware" ]; then
+  error "Pi-Ware needs to be installed to use this." exit
+fi
+
 # flags. default is to launch app.
 if [[ "$1" == "--version" ]] || [[ "$1" == "-v" ]]; then
   echo -e "
